@@ -1,0 +1,26 @@
+{
+  "name": "my-cli",
+  "version": "1.0.0",
+  "description": "CLI for Introduction to Nodejs",
+  "dependencies": {
+    "ansi-escapes": "^4.3.2",
+    "chalk": "^4.1.2",
+    "commist": "^3.0.0",
+    "enquirer": "^2.3.6",
+    "got": "^11.8.5",
+    "minimist": "^1.2.6"
+  },
+  "author": "Simon Cateau",
+  "license": "MIT",
+  "main": "index.js",
+  "_type": "module",
+  "bin": {
+    "cmd": "./cmd.js"
+  },
+  "scripts": {
+    "help": "node bin/cmd",
+    "list:categories": "node bin/cmd.js list cats",
+    "list:category:id": "node bin/cmd.js list ids --cat electronics",
+    "add-order": "node bin/cmd.js add order --amount 999 A3"
+  }
+}
